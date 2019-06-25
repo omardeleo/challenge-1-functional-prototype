@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 412px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-weight: normal;
+    width: 100%;
+}
+
+.thumb {
+    cursor: pointer;
+}
+
+bottom {
+    width: 100%;
+    display: flex;
+}
+
+middle .card .thumb{
+    width: 100%;
+    height: 110px;
+}
+
+bottom .card .thumb{
+    width: 100%;
+    height: 140px;
+}
+
+.one {
+    background: steelblue;
+}
+
+.two {
+    background: darkslateblue;
+}
+
+.three {
+    background: darkorchid;
+}
+
+.four {
+    background: coral;
+} 
+
+.five {
+    background: firebrick;
+}
+
+.six {
+    background: gold;
+}
+
+.seven {
+    background: seagreen;
+}
+
+@media all and (max-width:719px) {
+    body {
+        padding: 0 20px;
+    }
+
+    .title {
+        margin-top: 40px;
+    }
+
+    .large-thumb {
+        height: 175px;
+        background: steelblue;
+        margin: 25px 0;
+    }
+
+    .text {
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+
+    middle {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    middle .card {
+        width: 50%;
+    }
+
+    middle .card .thumb{
+        width: 100%;
+        height: 110px;
+    }
+
+    bottom .card .thumb{
+        width: 100%;
+        height: 140px;
+    }
+
+    middle .card {
+        padding-right: 8px;
+    }
+
+    middle .card:nth-of-type(2n) {
+        padding-right: 0px;
+        padding-left: 8px;
+    }
+
+    bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    bottom .card {
+        width: 100%;
+    }
+
+    .bars-container {
+        display: flex;
+        width: 100%;
+    }
+    
+    .bar {
+        height: 40px;
+        background: lightgray;
+        margin: 15px 0;
+    }
+
+    bottom .bar {
+        width: 50%;
+    }
+   
+}
+
+@media all and (min-width:720px) {
+    body {      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 16px;
+    }
+
+    .title {
+        margin: 60px 0 55px 0;
+    }
+
+    .main {
+        width: 100%;
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .large-thumb {
+        background: steelblue;
+        width: 100%;
+        max-width: 580px;
+        height: 200px;
+        margin-right: 4px;
+    }
+
+    .text {
+        width: 200px;
+    }
+
+    middle, bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    middle {
+        margin-top: 40px;
+    }
+
+    middle .card {
+        width: 100%;
+        max-width: 180px;
+        padding: 2px;
+    }
+
+    middle .card:first-of-type {
+        padding-left: 0;
+    }
+
+    middle .card:last-of-type {
+        padding-right: 0;
+    }
+
+    .bar {
+        height: 40px;
+        background: lightgray;
+        margin-top: 35px;
+    }
+
+    bottom {
+        margin-top: 70px;
+    }
+
+    bottom .card {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    bottom .card {
+        width: 100%;
+    }
+
+}
+

@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">AINULINDALE</h1>
+            <div class="main">
+            <header>
+                <div class="large-thumb"></div>
+                <div class="text">
+                There was Eru, the One, who in Arda is called Ilúvatar; and he made first the Ainur, the Holy Ones, that were the
+                offspring of his thought, and they were with him before aught else was made.
+                </div>
+            </header>
+            <middle>
+                <div class="card">
+                    <div class="thumb one"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="card">
+                    <div class="thumb two"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="card">
+                    <div class="thumb three"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="card">
+                    <div class="thumb four"></div>
+                    <div class="bar"></div>
+                </div>
+            </middle>
+            <bottom>
+                <div class="card">
+                    <div class="thumb five"></div>
+                    <div class="bars-container">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumb six"></div>
+                    <div class="bars-container">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumb seven"></div>
+                    <div class="bars-container">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </bottom>
+            </div>
+        </div>
+        <script>
+            const largeThumb = document.querySelector('.large-thumb');
+            const thumbs = document.querySelectorAll('.thumb');
+
+            thumbs.forEach(thumb => {
+                thumb.addEventListener('click', (evt) =>{
+                    const element = evt.target;
+                    const bgColor = window.getComputedStyle(element, null).getPropertyValue('background-color'); 
+                    largeThumb.style.backgroundColor = bgColor;
+                })
+            })
+        </script>
+    </body>
+</html>
